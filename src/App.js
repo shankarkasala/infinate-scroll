@@ -36,7 +36,7 @@ export default function App() {
     for (let i = 0; i < n; i++) {
       items.push('item' + count++);
     }
-
+    //setData((prevData) => [...prevData, ...items]);
     previousData.current = [...previousData.current, ...items]; // Store previous data
     setData(previousData.current); // Update the data state
   };
